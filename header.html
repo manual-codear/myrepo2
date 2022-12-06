@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"> <img src="icons\icons8-up-squared-50.png" alt=""> </button>
+
+    <header id="header">
+        <div class="header">
+          <div class="topnav">
+            <a href="#home" class="active"> <img src="icons\icons8-machine-64.png" alt=""> </a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="#news">News</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+          </div>
+        </div>
+        
+     
+          <div class="head-topnav">
+            <div class="top-nav-container">
+              
+              <div class="left-container">
+                <div class="left-icons"> <a href="#" tel="+91123456789"><img src="icons\icons8-call-female-30.png" alt="insta"> <span>+91-123-456-789</span></a></div>
+                <div class="left-icons mail"> <a href="#"> <img src="icons\icons8-composing-mail-50.png" alt="fb"> <span>mymail@gmail.com</span></a></div>
+              </div>
+  
+              <div class="right-container">
+                <div class="follow-us">
+                 <div class="icons"> <a href="#"> <img src="icons\icons8-instagram-50 (2).png" alt="insta"> </a></div>
+                 <div class="icons"> <a href="#"> <img src="icons\icons8-facebook-50.png" alt="fb"> </a></div>
+                 <div class="icons"> <a href="#"> <img src="icons\icons8-twitter-50 (1).png" alt="twitter"></a> </div>
+                 <div class="icons"> <a href="#"> <img src="icons\icons8-telegram-app-50 (1).png" alt="tele"></a> </div>
+                 <div class="icons"> <a href="#"> <img src="icons\icons8-whatsapp-50 (1).png" alt="wapp"></a> </div>
+                </div>
+              </div> 
+            </div>
+            </div>
+            <div class="bottom-nav">
+              <div class="bottom-left">
+                <div class="nav-logo">
+                  <img src="icons\icons8-machine-64.png" alt="">
+                  <div class="logo-text">
+                  <span class="fc">Glow Tech</span><span class="sc">POLYMER</span>
+                </div>
+                </div>
+              </div>
+             <div class="bottom-right">
+              <ul>
+                <li> <a href="index.php"> Home </a></li>
+                <li> <a href="ourproduct.php">Our Prouducts </a> </li>
+                <li> <a href="">Videos </a> </li>
+                <li><a href="#">Gallery </a> </li>
+                <li><a href="contact-form.html">Contact Us </a> </li>
+                <li><a href="#">About </a> </li>
+              </ul>
+             </div>
+            </div>
+  
+          
+      </header>
+      <script src="index.js"></script>
+      <script>
+      window.onscroll = function() {Function()};
+
+function Function() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+      </script>
+</body>
+</html>

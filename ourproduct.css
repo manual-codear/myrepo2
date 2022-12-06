@@ -1,0 +1,239 @@
+.column {
+        padding: 1px;
+        width: 9rem;
+        height: 7rem;
+        margin-top: 1px;
+    padding: 10px;
+  }
+  .product-container{
+    display: flex;
+    
+    width: 100%;
+  }
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .sec-right{
+    float: right;
+    width: 51%;
+  }
+  .sec-left{
+    float:left;
+    width: 50%;
+  }
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+  }
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: relative;
+    display: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   padding: 10px;
+  }
+  .container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .product-info{
+    width: 100%;
+    height: 32.5rem;
+  }
+  .product-info .pro-heading{
+    width: 90%;
+    margin: auto;
+  }
+  .pro-heading h1{
+    color: #111;
+    line-height: 1.18;
+    letter-spacing: -.2px;
+    font-family: sans-serif;
+  }
+  .pro-heading .price{
+   color: rgb(48, 47, 47);
+   line-height: 1.18;
+   letter-spacing: -.1px;
+   font-weight: 700;
+   font-family: sans-serif;
+   
+   font-size: 22px;
+  }
+  .pro-heading span{
+    color: rgb(0, 0, 0);
+    /* font-size: small; */
+  }
+  .pro-heading small{
+    color: rgb(75, 75, 75);
+    /* font-size: small; */
+  }
+  .quantity{
+    font-weight: 400;
+    color: #444;
+    font-family: arial;
+    padding: 5px 0;
+  }
+  .info-table .center{
+    width: 90%;
+    margin: auto;
+  }
+ .center th{
+   text-align: start;
+   line-height: 33px;
+   padding-left: 5px;
+   font-family: sans-serif;
+   letter-spacing: 1px;
+   font-weight: 600;
+   border:  1px solid rgb(228 228 228);
+  }
+  .center td:first-child{
+    color: rgb(104 104 104);
+    font-family: arial;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .center td:last-child{
+    
+    color: rgb(138 7 7);
+
+    font-family: arial;
+    letter-spacing: 1px;
+    font-weight: 600;
+    }
+  .center td{
+    border-bottom: 1px solid rgb(228 228 228);
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    padding-left: 5px;
+    /* border-left: 1px solid rgb(228 228 228); */
+    border: 1px solid rgb(236 236 236);
+    border-top: none;
+  }
+  .para{
+    padding: 10px;
+  }
+  .para h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #262626;
+ letter-spacing: 0.6px;
+ font-size: 20px;
+ margin-top: 3px;
+  }
+   .para p{
+   font-weight: 400;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ color: #333;
+ letter-spacing: 0.6px;
+ font-size: 16px;
+ line-height: 24px;
+ 
+  }
+  .available-filter-glow-tech-polymer li{
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333;
+    letter-spacing: 0.6px;
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+  }
+  .operations {
+    margin-top: 8px;
+  }
+.operations h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #262626;
+ letter-spacing: 0.6px;
+ font-size: 20px;
+ 
+}
+.operations p{
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333;
+    letter-spacing: 0.6px;
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+  }
+  .salient-fea h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #262626;
+ letter-spacing: 0.6px;
+ font-size: 20px;
+ 
+}
+.salient-fea li
+{
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(96, 48, 48);
+    letter-spacing: 0.6px;
+    font-size: 16px;
+    line-height: 28px;
+    list-style: none;
+}
+.block {
+    display: block;
+    width: 35%;
+    border-radius: 10px;
+    margin: auto;
+    border: none;
+    background-color: #04AA6D;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+font-family: 'Arial Narrow Bold', sans-serif;
+  }
+  .block:hover{
+background-color: rgb(91, 174, 144);
+  }
+  .go-to-buttom a{
+text-decoration: none;
+  }
+  section{
+    width: 97%;
+    margin: auto;
+  }
